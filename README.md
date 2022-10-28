@@ -12,22 +12,37 @@
 - Laravel Framework v9
 - Composer v2.3.5
 
-## How to install 
+## How to install
+- Open your termimal and move to where to install the application
+### Copy or clone the repo
+ `git clone https://github.com/mmsh350/library.git`
 
-## Step 1: Install Laravel Project
+## Copy and setup environment
 
-## Step 2: Configure Database Details
-After, Installation Go to the project root directory, open .env file, and set database.
+`.env.example` to `.env` and setup your database
 
-## Cloninig  
-- Clone the repo
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=library
+DB_USERNAME={username}
+DB_PASSWORD={password}
 
-## Dependancy & migrations 
-- Run and update all dependancies  via npm 
-   ~(composer install)~
-- Run all migrations 
-   ~(php artisan migrate)
-- Run ~(php artisan seed) - this will seed the admin credentials to database
+Replace `{username}` and `{password}` with your db username and password
+
+## Setup
+
+### Run and update all dependancies
+
+`composer install`
+ 
+### Run all migrations
+
+`php artisan migrate`
+
+### Seed Database
+
+`php artisan db:seed`
 
 ## Admin Credentials 
 - Username : sani.muhammad38@gmail.com
@@ -36,12 +51,6 @@ After, Installation Go to the project root directory, open .env file, and set da
 ## Accessing the software 
 - Use the php artisan command (php artisan serve) to run the software
 - http://127.0.0.1:8000/
-
-## Design Interface
-
-
-<img src="">
-
 
  
 
