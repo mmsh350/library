@@ -54,13 +54,12 @@ Replace `{username}` and `{password}` with your db username and password
 
 Sample Output
 
-| ![home](https://user-images.githubusercontent.com/28541625/198533823-883b4c30-d96a-4d97-a231-c052abfa272c.png)
-| ![getstarted](https://user-images.githubusercontent.com/28541625/198533879-612406f0-7df7-48da-b92b-b455fee4ad01.png)
-| ------------- | ------------- |
-| ![login](https://user-images.githubusercontent.com/28541625/198533971-745464a3-84ec-4f13-b6b4-24b5154a565b.png)
+| ![home](https://user-images.githubusercontent.com/28541625/198533823-883b4c30-d96a-4d97-a231-c052abfa272c.png)|
+| ![getstarted](https://user-images.githubusercontent.com/28541625/198533879-612406f0-7df7-48da-b92b-b455fee4ad01.png)|
+| ![login](https://user-images.githubusercontent.com/28541625/198533971-745464a3-84ec-4f13-b6b4-24b5154a565b.png)|
 | ![register](https://user-images.githubusercontent.com/28541625/198534023-ec1ba41d-d468-4269-b8e9-7929a9bc4718.png)|
-|![users](https://user-images.githubusercontent.com/28541625/198534156-b8ece784-21db-4c16-9c5e-3a0155424682.png)
-|![profile](https://user-images.githubusercontent.com/28541625/198534199-cb8a461a-50c1-49b8-88c7-6f913bd3b020.png)|
+| ![users](https://user-images.githubusercontent.com/28541625/198534156-b8ece784-21db-4c16-9c5e-3a0155424682.png)|
+| ![profile](https://user-images.githubusercontent.com/28541625/198534199-cb8a461a-50c1-49b8-88c7-6f913bd3b020.png)|
  
 
 
