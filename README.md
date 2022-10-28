@@ -16,33 +16,18 @@
 
 ## Step 1: Install Laravel Project
 
-First, open Terminal and run the following command to create a fresh laravel project:
-
-## #! /bin/bash
-composer create-project --prefer-dist laravel/laravel laravel-datatable-example
-or, if you have installed the Laravel Installer as a global composer dependency:
-
-## #! /bin/bash
-laravel new laravel-datatable-example
-
 ## Step 2: Configure Database Details
-After, Installation Go to the project root directory, open .env file, and set database detail as follow:
-
-- DB_CONNECTION=mysql 
-- DB_HOST=127.0.0.1 
-- DB_PORT=3306 
-- DB_DATABASE=<DATABASE NAME>
-- DB_USERNAME=<DATABASE USERNAME>
-- DB_PASSWORD=<DATABASE PASSWORD>
-
+After, Installation Go to the project root directory, open .env file, and set database.
 
 ## Cloninig  
-- Clone the repo 
+- Clone the repo
 
 ## Dependancy & migrations 
 - Run and update all dependancies  via npm 
-- Run all migrations (php artisan migrate)
-- Run (php artisan seed) - this will seed the admin credentials to database
+   ~(composer install)~
+- Run all migrations 
+   ~(php artisan migrate)
+- Run ~(php artisan seed) - this will seed the admin credentials to database
 
 ## Admin Credentials 
 - Username : sani.muhammad38@gmail.com
@@ -55,7 +40,7 @@ After, Installation Go to the project root directory, open .env file, and set da
 ## Design Interface
 
 
-![Image description](https://drive.google.com/file/d/1TLUyFoCFTipVRADD8LCQQE1CfS_7vvXM/view?usp=sharing))
+<img src="">
 
 
  
