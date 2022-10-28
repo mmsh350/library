@@ -19,6 +19,9 @@ class VerifyCsrfToken extends Middleware
         '/disable-users',
         '/settings',
         '/save-profile',
+        '/add-book',
+        '/update-book',
+        
         
         
     ];

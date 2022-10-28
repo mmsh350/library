@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 	<script src="{{ asset('js/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
 	<link rel="stylesheet" href="{{ asset('alert/sweetalert.css') }}">
+		<link rel="stylesheet" href="{{ asset('libs/bower/font-awesome/css/font-awesome.min.css') }}" />
 </head>
 <body class="tg-home tg-homevtwo">
 	 
@@ -68,14 +69,90 @@
 				Main Start
 		*************************************-->
 		<main id="tg-main" class="tg-main tg-haslayout">
-			 
-			<section class="tg-sectionspace tg-haslayout">
+		@if (auth()->user()->role == 'admin') 
+		<section class=" tg-haslayout">
 				<div class="container">
+                <div class="row " style="margin-top:25px;" >
+					<h3><i class="fa fa-book"></i> Checked out Books</a></h3>
+					</div>
+				 
 					<div class="row">
-						 
-						  
-							 
-						</div>
+					
+                                       <!-- <h4 class="m-b-md"></h4>-->
+                                        <div class="table-responsive" style="margin-bottom:40px;">
+                                            <div id="default-datatable_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <table id="bookstable" class="display compact book_datatable" style="width:700%">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th width="2%">ID</th>
+																	<th>Reader</th>
+																	<th>ISBN</th>
+																	<th>Book Title</th>
+																	<th width="30%">Checked Out Date</th>
+																	<th width="30%">Exp. Check in Date</th>
+																	<th>Days Rem/Over</th>
+                                                                    
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                
+                                                            </tbody>
+                                                            
+                                                        </table>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+					</div>
+				</div>
+			</section>
+			@endif
+			<section class=" tg-haslayout">
+				<div class="container">
+                <div class="row " style="margin-top:25px;" >
+					<h3><i class="fa fa-book"></i> Books</a></h3>
+					</div>
+					 
+					<div class="row">
+					<div class="row">
+                                         @if(session()->has('status'))
+                                            <div class="alert alert-success">
+                                                {{ session()->get('status') }}
+                                            </div>
+                                            @endif
+                                    </div>
+                                       <!-- <h4 class="m-b-md"></h4>-->
+                                        <div class="table-responsive" style="margin-bottom:40px;">
+                                            <div id="default-datatable_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <table id="bookstable" class="display compact book_datatable" style="width:700%">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th width="2%">ID</th>
+                                                                    <th width="30%">Cover Image</th>
+																	<th>Title</th>
+                                                                    <th>ISBN</th>
+                                                                    <th>Publisher</th>
+																	<th>date added</th>
+                                                                    <th width="">Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                
+                                                            </tbody>
+                                                            
+                                                        </table>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
 					</div>
 				</div>
 			</section>
@@ -85,24 +162,7 @@
 			 
 			<!-- Modal login/register -->
 			<!-- Button trigger modal -->
-
-			<!-- Modal -->
-			<div class="modal fade" id="Started" tabindex="-1" role="dialog" aria-labelledby="StartModalLabel"  aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-				 
-				<div class="modal-body text-center">
-				<div class="img-fluid" style="padding-bottom:15px;"><img src="{{ asset('images/logo.png') }}" /></div>
-					<p class="text-center"> Login to proceed if you are an existing user</p>
-					<p class="text-center"> For new users use the register button </p>
-					
-				<a href="{{ route('register') }}" type="button" class="tg-btn">Register</a>
-				<a href="{{ route('login') }}" type="button" class="tg-btn tg-active">Login</a>
-				</div>
-				 
-				</div>
-			</div>
-			</div>	 
+ 
 			 
 		</main>
 		<!--************************************
@@ -120,7 +180,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<span class="tg-copyright">2021 All Rights Reserved By &copy; Book Library</span>
+							<span class="tg-copyright">2022 All Rights Reserved By &copy; Book Library</span>
 						</div>
 					</div>
 				</div>

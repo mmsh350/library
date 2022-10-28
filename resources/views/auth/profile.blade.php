@@ -142,23 +142,7 @@
 			<!-- Modal login/register -->
 			<!-- Button trigger modal -->
 
-			<!-- Modal -->
-			<div class="modal fade" id="Started" tabindex="-1" role="dialog" aria-labelledby="StartModalLabel"  aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-				 
-				<div class="modal-body text-center">
-				<div class="img-fluid" style="padding-bottom:15px;"><img src="{{ asset('images/logo.png') }}" /></div>
-					<p class="text-center"> Login to proceed if you are an existing user</p>
-					<p class="text-center"> For new users use the register button </p>
-					
-				<a href="{{ route('register') }}" type="button" class="tg-btn">Register</a>
-				<a href="{{ route('login') }}" type="button" class="tg-btn tg-active">Login</a>
-				</div>
-				 
-				</div>
-			</div>
-			</div>	 
+			 
 			 
 		</main>
 		<!--************************************
