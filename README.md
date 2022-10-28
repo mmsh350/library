@@ -54,7 +54,7 @@ After, Installation Go to the project root directory, open .env file, and set da
 
 ## Design Interface
 
-<img src="">
+<img src="https://drive.google.com/file/d/1TLUyFoCFTipVRADD8LCQQE1CfS_7vvXM/view?usp=sharing">
 
 
  
